@@ -1,0 +1,39 @@
+.banniere-giannis {
+    background-image: url('../images/banniereG.jpeg');
+    background-size: cover;
+    background-position: center;
+    padding: 150px;
+    text-align: center;
+    color: white;
+
+}
+
+.block-sommaire {
+    display: flex;  
+    margin-left: 50px;
+    background-color: #EEE1C6;
+    width: 20%;
+    margin-top: 10px;
+    border-radius: 10px;
+    opacity: 0.7;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+.biographie {
+    background: linear-gradient(to right, #0e30a0, #c7c2c2);
+    margin: 20px 50px 20px 50px;
+    border-radius: 10px;
+    
+}
+
+.carriere {
+    background-color:#EEE1C6;
+    margin:10px 50px 10px 50px;
+    border-radius: 10px;
+}
+
+.style-de-jeu {
+    background-color:#EEE1C6;
+    margin:10px 50px 10px 50px;
+    border-radius: 10px;
+}

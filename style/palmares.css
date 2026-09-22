@@ -1,0 +1,61 @@
+.banniere-trophee {
+    background-image: url('../images/palmares/palmaresGA.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 150px;
+    text-align: center;
+    color: white;   
+}   
+
+.block-awards {
+ border-radius: 10px;
+ background-color: #fdfdfd;
+ width: 30%;
+ opacity: 0.9;
+ box-shadow: 6px 6px 50px rgba(0, 0, 0, 0.5);
+} 
+
+.description {
+    background-color: #fdfdfd; 
+    margin-top: 20px ;  
+    padding: 20px;   
+}
+
+.description-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #030408;
+}
+
+.palmares-photos {
+ background-color: white;
+} 
+
+.palmares-photos h2 {
+margin-bottom: 80px;
+}
+
+.grid-giannis {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.grid-giannis img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+} 
+
+@media screen and (max-width: 800px) {
+    .grid-giannis {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .grid-giannis {
+        grid-template-columns: 1fr;
+    }
+}
