@@ -1,0 +1,214 @@
+
+/* 5.Accueil */
+.hero {
+  overflow: hidden;
+  padding-top: 88px;
+  padding-bottom: 100px;
+  background:
+    radial-gradient(ellipse at 8% 4%, rgba(221, 230, 255, 0.55), transparent 38%),
+    var(--color-bg);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(300px, 0.75fr);
+  align-items: center;
+  gap: clamp(40px, 7vw, 95px);
+}
+
+.hero-copy {
+  max-width: 700px;
+}
+
+.hero-lead {
+  max-width: 650px;
+  margin-bottom: 29px;
+  font-size: 1.1rem;
+  line-height: 1.85;
+}
+
+.intro-card {
+  position: relative;
+  padding: 25px;
+  overflow: hidden;
+  border: 1px solid rgba(226, 232, 242, 0.95);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-card);
+}
+
+.card-topline {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding-bottom: 21px;
+  border-bottom: 1px solid var(--color-line);
+}
+
+.window-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #d8deea;
+}
+
+.card-label {
+  margin-left: auto;
+  color: #9aa4b6;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.75rem;
+}
+
+.profile-initial {
+  display: grid;
+  width: 70px;
+  height: 70px;
+  margin: 26px 0 16px;
+  place-items: center;
+  border-radius: 22px;
+  background: linear-gradient(135deg, #e8edff, #d9e3ff);
+  color: var(--color-accent);
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.profile-name {
+  margin-bottom: 3px;
+  color: var(--color-text);
+  font-size: 1.35rem;
+  font-weight: 750;
+}
+
+.profile-role {
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+}
+
+.profile-divider {
+  height: 1px;
+  background: var(--color-line);
+}
+
+.quick-facts {
+  margin: 15px 0 20px;
+}
+
+.quick-facts div {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 8px 0;
+}
+
+.quick-facts dt {
+  color: var(--color-muted);
+  font-size: 0.82rem;
+}
+
+.quick-facts dd {
+  margin: 0;
+  color: var(--color-text);
+  font-size: 0.82rem;
+  font-weight: 650;
+  text-align: right;
+}
+
+.availability {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 11px;
+  border: 1px solid #d8eee2;
+  border-radius: 99px;
+  background: #f2fbf6;
+  color: #26754f;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.feature-card {
+  display: block;
+  padding: 27px;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  box-shadow: 0 4px 16px rgba(25, 42, 75, 0.025);
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+a.feature-card:hover {
+  transform: translateY(-4px);
+  border-color: #c7d2f6;
+  box-shadow: var(--shadow-card);
+}
+
+.feature-card p {
+  margin-bottom: 22px;
+  font-size: 0.93rem;
+}
+
+.feature-icon {
+  display: grid;
+  width: 44px;
+  height: 44px;
+  margin-bottom: 24px;
+  place-items: center;
+  border-radius: 13px;
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-accent-dark);
+  font-size: 0.85rem;
+  font-weight: 750;
+}
+
+.contact-panel {
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+  gap: 60px;
+  padding: 42px;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-lg);
+  background: #fff;
+}
+
+.contact-panel h2 {
+  font-size: clamp(1.7rem, 3vw, 2.35rem);
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 13px;
+}
+
+.contact-links > a {
+  display: inline-flex;
+  max-width: 100%;
+  align-items: center;
+  gap: 10px;
+  color: var(--color-accent-dark);
+  font-size: 0.91rem;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.contact-links > a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
